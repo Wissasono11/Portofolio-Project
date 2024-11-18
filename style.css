@@ -98,3 +98,57 @@ ul li {
   border-radius: 100px;
   width: fit-content;
 }
+
+.carousel-item {
+  display: flex !important;
+  gap: 32px;
+  align-items: center;
+}
+
+.box {
+  padding: 32px;
+  border-radius: 16px;
+  background-color: var(--subtle);
+  position: relative;
+}
+
+.img .bottom-quote {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+  z-index: 9999;
+}
+
+.contact-content {
+  background: url("assets/BannerContact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 146px 0;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #333;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+@media (max-width: 768px) {
+  ul {
+    position: fixed;
+    bottom: 0;
+    background: var(--subtle);
+    z-index: 9999;
+  }
+}
